@@ -18,14 +18,27 @@ header {
   position: absolute;
   top: 0;
   left: 0; }
+  @media (max-width: 854px) {
+    header {
+      height: 6rem; } }
+  header .main-logo {
+    font-size: 3.4rem;
+    margin: 0 0 0 6%;
+    color: white; }
+    @media (max-width: 464px) {
+      header .main-logo {
+        margin: 0 0 0 0.7rem; } }
   header svg {
-    height: 2rem;
-    width: 10rem; }
-
-.main-logo {
-  font-size: 3.4rem;
-  margin: 0 0 0 3rem;
-  color: white; }
+    height: 6rem;
+    width: 17rem;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (max-width: 854px) {
+      header svg {
+        width: 13rem; } }
+    @media (max-width: 464px) {
+      header svg {
+        width: 10rem; } }
 
 html, body {
   margin: 0;
@@ -62,11 +75,14 @@ a {
 
 button {
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 0.6rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer; }
+  @media (max-width: 464px) {
+    button {
+      font-size: 1rem; } }
   button.button-teal {
     color: white;
     background: #3ebea3; }
@@ -86,8 +102,17 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 464px) {
+    .hero-section {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      height: 100vh; } }
 
-.card-article {
+.hero-article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -96,9 +121,50 @@ button {
           align-items: center;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 0.6rem;
-  padding: 0 3.5rem 1.5rem 3.5rem; }
-  .card-article p {
+  margin-top: 5%;
+  padding: 0 4.5rem 2.5rem 4.5rem; }
+  @media (max-width: 464px) {
+    .hero-article {
+      width: 100%;
+      padding: 1rem 0;
+      border-radius: 0;
+      padding-bottom: 2rem; } }
+  .hero-article p {
+    font-size: 1.2rem;
     font-weight: 200; }
-  .card-article h1 {
-    font-size: 1.3rem;
+    @media (max-width: 464px) {
+      .hero-article p {
+        font-size: 1rem;
+        margin-bottom: 2rem; } }
+  .hero-article h1 {
+    font-size: 1.5rem;
     margin-bottom: 0; }
+    @media (max-width: 464px) {
+      .hero-article h1 {
+        font-size: 1.3rem;
+        margin: 0.5rem 0 0 0; } }
+
+.tech-section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  .tech-section .tech-article-card {
+    height: 40rem;
+    background: pink;
+    margin: 4rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center; }
+    .tech-section .tech-article-card p {
+      margin: 1rem;
+      color: black; }
+    .tech-section .tech-article-card img {
+      height: 20rem; }

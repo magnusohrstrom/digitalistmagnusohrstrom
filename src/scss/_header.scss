@@ -7,21 +7,44 @@ header {
     position: absolute; 
     top:0;
     left:0;
-    svg {
-        height: 2rem;
-        width: 10rem;
+    @include breakpoint(medium){
+        height: 6rem;
     }
-}
+    
+    .main-logo {
+        font-size:3.4rem;
+        margin:0 0 0 6%;
+        color:white;
+        @include breakpoint(small){
+            margin:0 0 0 0.7rem;
+        }
+    }
+    
+    svg {
+        height: 6rem;
+        width: 17rem;
+        display: inline-block;
+        vertical-align: middle;
+        @include breakpoint(medium){
+            width: 13rem;
+        }
+        @include breakpoint(small){
+            width: 10rem;
+        }
+    }
+    
+    .menu-icon {
 
-.main-logo {
-    font-size:3.4rem;
-    margin:0 0 0 3rem;
-    color:white;
-}
-
-
-
-nav {
+    }
+    
+    nav {
+    
+    }
     
 }
+
+
+
+
+
 

@@ -1,0 +1,23 @@
+.tech-section {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .tech-article-card {
+        height: 40rem;
+        background:pink;
+        margin:4rem 0;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        
+        p { 
+            margin:1rem;
+            color:black;
+        }
+
+        img {
+            height: 20rem;
+        }
+    }
+}
