@@ -1,0 +1,44 @@
+html, body {
+margin:0;
+padding:0;
+} 
+
+//typography
+h1, h2, h3, h4, h6, a , p {
+    font-family: 'Helvetica', 'Arial',serif;
+    color:white;
+} 
+a {
+    text-decoration: none;
+}
+
+//global classes
+.flex {
+    display: flex;
+    &.flex-row {
+        flex-direction: row;
+    }
+    &.flex-column {
+        flex-direction: column;
+    }
+    &.flex-center {
+        justify-content: center;
+        align-items:center;
+    }
+}
+
+button {
+    border:none;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor:pointer;
+    &.button-teal {
+        color:white;
+        background: $teal;
+    }
+    &.button-shadow {
+        box-shadow: 0ch;
+    }
+}
