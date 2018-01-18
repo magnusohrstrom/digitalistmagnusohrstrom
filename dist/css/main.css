@@ -18,15 +18,14 @@ header {
   position: absolute;
   top: 0;
   left: 0; }
+  header svg {
+    height: 2rem;
+    width: 10rem; }
 
 .main-logo {
   font-size: 3.4rem;
   margin: 0 0 0 3rem;
   color: white; }
-
-.logo-type {
-  height: 2rem;
-  width: 10rem; }
 
 html, body {
   margin: 0;

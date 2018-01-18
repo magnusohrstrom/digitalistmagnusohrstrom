@@ -7,6 +7,10 @@ header {
     position: absolute; 
     top:0;
     left:0;
+    svg {
+        height: 2rem;
+        width: 10rem;
+    }
 }
 
 .main-logo {
@@ -15,10 +19,7 @@ header {
     color:white;
 }
 
-.logo-type {
-    height: 2rem;
-    width: 10rem;
-}
+
 
 nav {
     
