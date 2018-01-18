@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     justify-content: center;
     align-items:center;
+    margin:0;
     @include breakpoint(small){
         justify-content: center;
         align-items:flex-end;
@@ -35,11 +36,12 @@
         }
     }
     h1 {
+        color:white;
         font-size: 1.5rem;
-        margin-bottom:0;
+        margin:1.5rem 0 1rem 0;
         @include breakpoint(small){
             font-size: 1.3rem;
-            margin:0.5rem 0 0 0;
+            margin:0.5rem 0 0.6rem 0;
         }
     }
 }
