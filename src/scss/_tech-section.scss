@@ -1,31 +1,39 @@
 .tech-section {
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    flex-wrap: wrap;
     &.row {
         margin:0;
     }
     .tech-article-card {
-        background:pink;
         margin:4rem 0;
         align-items: center;
         justify-content: space-between;
         text-align: center;
+        @include breakpoint(medium){
+            margin:4rem 0 0 0;
+        }
         
         h3 {
             font-size: 2rem;
             color:grey;
+            font-weight: 800;
         }
 
         p { 
             margin:1rem;
             font-size: 1.2rem;
             color:black;
+            max-width: 30rem;
+            @include breakpoint(medium){
+                margin-bottom:2rem;
+                font-size: 1rem;
+            }
         }
 
         img {
             height: 10rem;
+            margin-bottom: 1rem;
+            @include breakpoint(medium){
+                height: 8rem;
+            }
         }
     }
 }
