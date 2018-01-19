@@ -1,5 +1,5 @@
 .hero-section {
-    height: 50rem;
+    height: 80rem;
     width:100%;
     background:url('../../../dist/images/background.jpg');
     background-size: cover;
@@ -7,10 +7,18 @@
     justify-content: center;
     align-items:center;
     margin:0;
+    @include breakpoint(xxxlarge){
+        height: 100vh;
+    }
     @include breakpoint(small){
         justify-content: center;
         align-items:flex-end;
-        height: 100vh;
+    }
+    .hero-arrow {        
+        position: absolute;
+        bottom:2%;
+        height: 3rem;
+        width: 3.5rem;
     }
 }
 
@@ -20,7 +28,7 @@
     background:$black-overlay; 
     border-radius: 0.6rem;
     margin-top:5%;
-    padding: 0 4.5rem 2.5rem 4.5rem;
+    padding: 0rem 4.5rem 1.5rem 4.5rem;
     @include breakpoint(small){
         width: 100%;
         padding:1rem 0;
@@ -28,8 +36,9 @@
         padding-bottom: 2rem;
     }
     p { 
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight:200;
+        color:white;
         @include breakpoint(small){
             font-size: 1rem;
             margin-bottom: 2rem;
@@ -38,7 +47,7 @@
     h1 {
         color:white;
         font-size: 1.5rem;
-        margin:1.5rem 0 1rem 0;
+        margin:1.5rem 0 1.5rem 0;
         @include breakpoint(small){
             font-size: 1.3rem;
             margin:0.5rem 0 0.6rem 0;

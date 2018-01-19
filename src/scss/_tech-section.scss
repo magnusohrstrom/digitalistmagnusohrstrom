@@ -1,6 +1,7 @@
 .tech-section {
+    
     &.row {
-        margin:0;
+        margin:2rem 6% 6rem 6%;
     }
     .tech-article-card {
         margin:4rem 0;
@@ -13,7 +14,7 @@
         
         h3 {
             font-size: 2rem;
-            color:grey;
+            color:$grey;
             font-weight: 800;
         }
 
@@ -22,6 +23,7 @@
             font-size: 1.2rem;
             color:black;
             max-width: 30rem;
+            color:$grey;
             @include breakpoint(medium){
                 margin-bottom:2rem;
                 font-size: 1rem;

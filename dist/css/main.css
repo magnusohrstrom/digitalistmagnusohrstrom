@@ -45,8 +45,7 @@ html, body {
   padding: 0; }
 
 h1, h2, h3, h4, h6, a, p {
-  font-family: 'Helvetica', 'Arial',serif;
-  color: white; }
+  font-family: 'Helvetica', 'Arial',serif; }
 
 a {
   text-decoration: none; }
@@ -92,7 +91,7 @@ button {
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75); }
 
 .hero-section {
-  height: 50rem;
+  height: 80rem;
   width: 100%;
   background: url("../../../dist/images/background.jpg");
   background-size: cover;
@@ -104,6 +103,9 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin: 0; }
+  @media (max-width: 2000px) {
+    .hero-section {
+      height: 100vh; } }
   @media (max-width: 464px) {
     .hero-section {
       -webkit-box-pack: center;
@@ -111,8 +113,12 @@ button {
               justify-content: center;
       -webkit-box-align: end;
           -ms-flex-align: end;
-              align-items: flex-end;
-      height: 100vh; } }
+              align-items: flex-end; } }
+  .hero-section .hero-arrow {
+    position: absolute;
+    bottom: 2%;
+    height: 3rem;
+    width: 3.5rem; }
 
 .hero-article {
   -webkit-box-pack: center;
@@ -124,7 +130,7 @@ button {
   background: rgba(0, 0, 0, 0.82);
   border-radius: 0.6rem;
   margin-top: 5%;
-  padding: 0 4.5rem 2.5rem 4.5rem; }
+  padding: 0rem 4.5rem 1.5rem 4.5rem; }
   @media (max-width: 464px) {
     .hero-article {
       width: 100%;
@@ -132,8 +138,9 @@ button {
       border-radius: 0;
       padding-bottom: 2rem; } }
   .hero-article p {
-    font-size: 1.2rem;
-    font-weight: 200; }
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: white; }
     @media (max-width: 464px) {
       .hero-article p {
         font-size: 1rem;
@@ -141,14 +148,14 @@ button {
   .hero-article h1 {
     color: white;
     font-size: 1.5rem;
-    margin: 1.5rem 0 1rem 0; }
+    margin: 1.5rem 0 1.5rem 0; }
     @media (max-width: 464px) {
       .hero-article h1 {
         font-size: 1.3rem;
         margin: 0.5rem 0 0.6rem 0; } }
 
 .tech-section.row {
-  margin: 0; }
+  margin: 2rem 6% 6rem 6%; }
 
 .tech-section .tech-article-card {
   margin: 4rem 0;
@@ -164,13 +171,14 @@ button {
       margin: 4rem 0 0 0; } }
   .tech-section .tech-article-card h3 {
     font-size: 2rem;
-    color: grey;
+    color: #414B50;
     font-weight: 800; }
   .tech-section .tech-article-card p {
     margin: 1rem;
     font-size: 1.2rem;
     color: black;
-    max-width: 30rem; }
+    max-width: 30rem;
+    color: #414B50; }
     @media (max-width: 854px) {
       .tech-section .tech-article-card p {
         margin-bottom: 2rem;
