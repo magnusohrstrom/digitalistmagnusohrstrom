@@ -1,0 +1,26 @@
+@include keyframe('nav-is-open') {
+    from {
+        width: 100%;
+        height: 0;
+        right:0;
+        
+    }
+    to {
+        width: 100%;
+        height: 100vh;
+        right: 0;
+      
+    } 
+}
+
+@include keyframe('nav-is-closed') {
+    from {
+        width: 100%;
+        height: 100vh;
+    }
+    to {
+        width: 100%;
+        height: 0;
+        right: 0;
+    } 
+}

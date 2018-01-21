@@ -16,9 +16,13 @@
     }
     .hero-arrow {        
         position: absolute;
-        bottom:2%;
+        bottom:8%;
         height: 3rem;
-        width: 3.5rem;
+        cursor:pointer;
+        //width: 3.6rem;
+        @include breakpoint(small){
+            display: none;
+        }
     }
 }
 
