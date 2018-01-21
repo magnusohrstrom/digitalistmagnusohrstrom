@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/main.css" type"text/css"/>
     <title>Digitalist</title>
@@ -21,21 +21,32 @@
                 <span></span>
             </div>
         </div>
+        <form id="search-form" class="search-form flex flex-center" >
+            <input type="text">
+        </form>
         <nav id="navigation" class="flex flex-row">
-            <ul>
+            <ul class="main-nav">
                 <li>
                     <a href="">Home</a>
                 </li>
-                <li>
-                    <a href="">Projects</a>
+                <li id="projects-li" class="flex flex-column">
+                    <a>Projects</a>
+                    <img src="dist/images/hero-arrow.svg" class="projects-arrow"  alt="">
                     <ul class="sub-nav">
                         <li><a href="">Case1</a></li>
                         <li><a href="">Case2</a></li>
                         <li><a href="">Case3</a></li>
+                        <li><a href="">Case4</a></li>
                     </ul>
                 </li>
                 <li>
+                    <a href="">Blogg</a>
+                </li>
+                <li>
                     <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
                 </li>
             </ul>
         </nav>
